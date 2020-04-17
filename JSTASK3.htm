@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JSTASK3</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+</head>
+<body>
+    
+    <script>
+        console.log("SESSION BEGINS");
+
+        const ViQ = (i) => {
+           
+            const Vik = new Array();
+            for (let e = 1 ; e <= i; e++) {
+                
+                    if (e%2==0 && e%3==0 && e%5==0) {
+                        Vik.push("yu-gi-oh")
+                    } else if (e%2==0 && e%3==0) {
+                        Vik.push("yu-gi")
+                    } else if (e%3==0 && e%5==0) {
+                        Vik.push("gi-oh")
+                    } else if (e%2==0 && e%5==0) {
+                        Vik.push("yu-oh")
+                    } else if (e%2==0) {
+                        Vik.push("yu")
+                    }else if (e%3==0) {
+                        Vik.push("gi")
+                    }else if (e%5==0) {
+                        Vik.push("oh")
+                    }
+                    
+                    else{
+                        Vik.push(e)
+                    }
+                        
+            }
+           
+                    console.log(Vik)
+           
+        }
+        ViQ(100)
+    </script>
+</body>
+</html>
